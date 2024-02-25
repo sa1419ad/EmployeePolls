@@ -49,11 +49,12 @@ const NewQuestion = () => {
 
         <Card.Body>
           <Form.Group as={Row} controlId="firstOption">
-            <Form.Label column sm={3}>
+            <Form.Label data-testid="firstOption" column sm={3}>
               First Option
             </Form.Label>
             <Col sm={9}>
               <Form.Control
+                data-testid="firstOptionInput"
                 placeholder="Enter first option"
                 {...register("firstOption")}
                 isInvalid={!!errors.firstOption}
@@ -65,11 +66,12 @@ const NewQuestion = () => {
           </Form.Group>
 
           <Form.Group as={Row} controlId="secondOption">
-            <Form.Label column sm={3}>
+            <Form.Label column data-testid="secondOption" sm={3}>
               Second Option
             </Form.Label>
             <Col sm={9}>
               <Form.Control
+                data-testid="SecendOptionInput"
                 placeholder="Enter second option"
                 {...register("secondOption")}
                 isInvalid={!!errors.secondOption}
@@ -82,7 +84,7 @@ const NewQuestion = () => {
         </Card.Body>
 
         <Card.Footer className="text-center">
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" data-testid="submitQuestion">
             Create Poll
           </Button>
         </Card.Footer>

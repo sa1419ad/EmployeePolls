@@ -9,6 +9,7 @@ import { handleLogOut } from "../Actions/AuthedUser";
 const Navigation = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.Users[state.authedUser]);
+
   const location = useLocation();
 
   function logout() {

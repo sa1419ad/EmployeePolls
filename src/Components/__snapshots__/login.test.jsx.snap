@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex justify-content-center align-items-center"
+    style="height: 100vh;"
+  >
+    <form
+      class="mx-auto my-5 p-4 border rounded"
+      style="width: 30%;"
+    >
+      <h1
+        class="text-center mb-4"
+      >
+        Login
+      </h1>
+      <div
+        class="mb-3 col"
+      >
+        <label
+          class="form-label"
+          data-testid="UserNameLable"
+          for="username"
+        >
+          User name
+        </label>
+        <input
+          class="form-control"
+          data-testid="Username"
+          id="username"
+          name="username"
+          placeholder="Enter User name"
+        />
+        <div
+          class="invalid-feedback"
+        />
+      </div>
+      <div
+        class="mb-3 col"
+      >
+        <label
+          class="form-label"
+          data-testid="passwordLable"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="form-control"
+          data-testid="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+          type="password"
+        />
+        <div
+          class="invalid-feedback"
+        />
+      </div>
+      <button
+        class="w-100 btn btn-primary"
+        data-testid="LoginKlick"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

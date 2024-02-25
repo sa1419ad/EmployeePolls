@@ -48,8 +48,9 @@ const Login = () => {
         <h1 className="text-center mb-4">Login</h1>
 
         <Form.Group className="mb-3" as={Col} controlId="username">
-          <Form.Label>User name</Form.Label>
+          <Form.Label data-testid="UserNameLable">User name</Form.Label>
           <Form.Control
+            data-testid="Username"
             placeholder="Enter User name"
             {...register("username", { required: true })}
             isInvalid={!!errors.username}
@@ -60,8 +61,9 @@ const Login = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" as={Col} controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label data-testid="passwordLable">Password</Form.Label>
           <Form.Control
+            data-testid="password"
             type="password"
             placeholder="Enter Password"
             {...register("password", { required: true })}
@@ -72,7 +74,12 @@ const Login = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Button className="w-100" variant="primary" type="submit">
+        <Button
+          className="w-100"
+          variant="primary"
+          type="submit"
+          data-testid="LoginKlick"
+        >
           Submit
         </Button>
       </Form>
